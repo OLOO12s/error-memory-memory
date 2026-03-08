@@ -1,0 +1,17 @@
+{
+  "id": "ERR-004",
+  "error": "KeyError: '不存在的键'",
+  "context": "字典访问",
+  "solution": "检查字典中是否存在键: 不存在的键",
+  "cause": "quick_start.py:44",
+  "prevention": "使用 dict.get() 或先检查 key in dict",
+  "tags": [
+    "f:\\",
+    "dict",
+    "auto-recorded",
+    "quick-test"
+  ],
+  "created_at": "2026-03-07T18:12:52.412476",
+  "updated_at": "2026-03-07T18:12:52.412476",
+  "hit_count": 0
+}

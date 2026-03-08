@@ -1,0 +1,108 @@
+{
+  "version": "1.0",
+  "last_id": 12,
+  "entries": [
+    {
+      "id": "ERR-001",
+      "error": "测试错误：ModuleNotFoundError",
+      "tags": [
+        "python",
+        "test"
+      ],
+      "created_at": "2026-03-06T16:28:39.011871"
+    },
+    {
+      "id": "ERR-002",
+      "error": "测试错误：ModuleNotFoundError",
+      "tags": [
+        "python",
+        "test"
+      ],
+      "created_at": "2026-03-06T16:29:02.164706"
+    },
+    {
+      "id": "ERR-003",
+      "error": "ZeroDivisionError: division by zero",
+      "tags": [
+        "f:\\",
+        "auto-recorded",
+        "quick-test",
+        "math"
+      ],
+      "created_at": "2026-03-07T18:12:52.411474"
+    },
+    {
+      "id": "ERR-004",
+      "error": "KeyError: '不存在的键'",
+      "tags": [
+        "f:\\",
+        "dict",
+        "auto-recorded",
+        "quick-test"
+      ],
+      "created_at": "2026-03-07T18:12:52.412476"
+    },
+    {
+      "id": "ERR-005",
+      "error": "FileNotFoundError: [Errno 2] No such file or directory: '/不存在的路径/文件.txt'",
+      "tags": [
+        "f:\\",
+        "auto-recorded",
+        "quick-test",
+        "file"
+      ],
+      "created_at": "2026-03-07T18:12:52.413473"
+    },
+    {
+      "id": "ERR-006",
+      "error": "ModuleNotFoundError: No module named '不存在的模块'",
+      "tags": [
+        "f:\\",
+        "auto-recorded",
+        "quick-test",
+        "import"
+      ],
+      "created_at": "2026-03-07T18:12:52.414474"
+    }
+  ],
+  "tags": {
+    "python": [
+      "ERR-001",
+      "ERR-002"
+    ],
+    "test": [
+      "ERR-001",
+      "ERR-002"
+    ],
+    "f:\\": [
+      "ERR-003",
+      "ERR-004",
+      "ERR-005",
+      "ERR-006"
+    ],
+    "auto-recorded": [
+      "ERR-003",
+      "ERR-004",
+      "ERR-005",
+      "ERR-006"
+    ],
+    "quick-test": [
+      "ERR-003",
+      "ERR-004",
+      "ERR-005",
+      "ERR-006"
+    ],
+    "math": [
+      "ERR-003"
+    ],
+    "dict": [
+      "ERR-004"
+    ],
+    "file": [
+      "ERR-005"
+    ],
+    "import": [
+      "ERR-006"
+    ]
+  }
+}

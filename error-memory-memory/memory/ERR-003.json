@@ -1,0 +1,17 @@
+{
+  "id": "ERR-003",
+  "error": "ZeroDivisionError: division by zero",
+  "context": "函数 divide | 除法运算",
+  "solution": "避免除以零，添加检查逻辑：if divisor != 0:",
+  "cause": "quick_start.py:31",
+  "prevention": "除法前检查除数不为零",
+  "tags": [
+    "f:\\",
+    "auto-recorded",
+    "quick-test",
+    "math"
+  ],
+  "created_at": "2026-03-07T18:12:52.411474",
+  "updated_at": "2026-03-07T18:12:52.411474",
+  "hit_count": 0
+}

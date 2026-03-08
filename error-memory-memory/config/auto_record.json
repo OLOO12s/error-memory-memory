@@ -1,0 +1,119 @@
+{
+  "version": "1.0",
+  "enabled": true,
+  "global_hook": false,
+  "auto_tags": [
+    "auto-recorded",
+    "quick-test"
+  ],
+  "skip_patterns": [
+    "KeyboardInterrupt",
+    "SystemExit",
+    "pytest_",
+    "unittest\\.",
+    "test_",
+    "_test.py"
+  ],
+  "error_solutions": {
+    "ModuleNotFoundError": {
+      "solution": "pip install {module}",
+      "auto_extract": true,
+      "extract_pattern": "'([^']+)'"
+    },
+    "ImportError": {
+      "solution": "检查模块是否正确安装：pip install <模块名>",
+      "auto_extract": false
+    },
+    "FileNotFoundError": {
+      "solution": "检查文件路径是否正确: {path}",
+      "auto_extract": true,
+      "extract_pattern": "'(.*?)'"
+    },
+    "PermissionError": {
+      "solution": "检查文件/目录权限，或以管理员权限运行",
+      "auto_extract": false
+    },
+    "KeyError": {
+      "solution": "检查字典中是否存在键: {key}",
+      "auto_extract": true,
+      "extract_pattern": "'(.*?)'"
+    },
+    "IndexError": {
+      "solution": "检查列表/数组索引是否越界，使用 len() 确认长度",
+      "auto_extract": false
+    },
+    "AttributeError": {
+      "solution": "检查对象类型和属性名是否正确",
+      "auto_extract": false
+    },
+    "TypeError": {
+      "solution": "检查参数类型是否匹配，参考函数签名",
+      "auto_extract": false
+    },
+    "ValueError": {
+      "solution": "检查参数值是否在有效范围内",
+      "auto_extract": false
+    },
+    "ZeroDivisionError": {
+      "solution": "避免除以零，添加检查逻辑：if divisor != 0:",
+      "auto_extract": false
+    },
+    "ConnectionError": {
+      "solution": "检查网络连接和目标地址是否可访问",
+      "auto_extract": false
+    },
+    "TimeoutError": {
+      "solution": "增加超时时间或检查服务是否可用",
+      "auto_extract": false
+    },
+    "JSONDecodeError": {
+      "solution": "检查JSON格式是否正确，使用jsonlint验证",
+      "auto_extract": false
+    },
+    "SyntaxError": {
+      "solution": "检查Python语法，特别是括号匹配和缩进",
+      "auto_extract": false
+    },
+    "IndentationError": {
+      "solution": "检查缩进是否一致（空格 vs Tab）",
+      "auto_extract": false
+    },
+    "NameError": {
+      "solution": "检查变量/函数名是否拼写正确，或是否已定义",
+      "auto_extract": true,
+      "extract_pattern": "name '([^']+)'"
+    },
+    "RecursionError": {
+      "solution": "检查递归终止条件，考虑使用循环替代",
+      "auto_extract": false
+    },
+    "MemoryError": {
+      "solution": "优化内存使用，考虑分批处理数据",
+      "auto_extract": false
+    },
+    "OSError": {
+      "solution": "检查系统资源和权限",
+      "auto_extract": false
+    },
+    "RuntimeError": {
+      "solution": "查看详细错误信息，检查程序状态",
+      "auto_extract": false
+    }
+  },
+  "smart_tagging": {
+    "enabled": true,
+    "error_type_tags": true,
+    "module_tags": true,
+    "function_prefix_tags": true
+  },
+  "deduplication": {
+    "enabled": true,
+    "time_window_minutes": 60,
+    "similarity_threshold": 0.85
+  },
+  "output": {
+    "print_on_record": true,
+    "show_traceback_preview": true,
+    "traceback_lines": 3
+  }
+}
